@@ -2,8 +2,8 @@
 An opportunity to explore how to make an EV3 Robot move.
 
 Authors: Dave Fisher, David Mutchler, Vibha Alangar,
-their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+their colleagues, and Robert Kreft.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 # -----------------------------------------------------------------------------
 # TODO: 2.
@@ -31,10 +31,10 @@ def go_two_seconds():
     # Use the DOT trick to figure out how to start, brake and coast motors.
     # -------------------------------------------------------------------------
     left_motor = rb.LargeMotor(rb.Plug("B"))  # Constructs Motor for left wheel
-    left_motor.start()
-    time.sleep(2)
-    left_motor.brake()
-
+    right_motor = rb.LargeMotor(rb.Plug("C"))
+    left_motor.start(),right_motor.start()
+    time.sleep(4)
+    left_motor.brake(),right_motor.brake()
 
 def run_test_go_inches():
     """ Tests the go_inches function. """
